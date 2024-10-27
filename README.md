@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,6 +14,7 @@
 <header>
     <h1>Blog sobre Programação</h1>
     <!-- Certifique-se de que o caminho está correto e as imagens estão dentro da pasta static/img -->
+    {% load static %}
     <img src="{% static 'img/postar.png' %}" alt="Blog Logo" width="300" height="auto">
     <img src="{% static 'img/postar01.png' %}" alt="Blog Logo" width="300" height="auto">
 </header>
