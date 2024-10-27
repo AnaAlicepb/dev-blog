@@ -17,6 +17,7 @@
     <img src="{% static 'img/postar01.png' %}" alt="Blog Logo" width="300" height="auto">
 </header>
 
+
 <details>
     <summary>Índice</summary>
     <ol>
