@@ -10,6 +10,7 @@
 </head>
 <body>
 
+{% load static %}
 <header>
     <h1>Blog sobre Programação</h1>
     <img src="{% static 'img/postar.png' %}" alt="Blog Logo" width="300" height="auto">
