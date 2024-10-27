@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,18 +6,13 @@
     <meta name="description" content="Blog criado com Django, Python e Bootstrap para compartilhar conteúdos de programação">
     <meta name="keywords" content="Django, Python, Bootstrap, Blog, Programação, Render">
     <meta name="author" content="Ana Alice Rodrigues">
-    <title>README - Blog sobre Programação</title>
 </head>
 <body>
-
 <header>
     <h1>Blog sobre Programação</h1>
-    <!-- Certifique-se de que o caminho está correto e as imagens estão dentro da pasta static/img -->
-    {% load static %}
-    <img src="{% static 'img/postar.png' %}" alt="Blog Logo" width="300" height="auto">
-    <img src="{% static 'img/postar01.png' %}" alt="Blog Logo" width="300" height="auto">
+    <img src="readm/postar.png" alt="Blog Logo" width="300" height="auto">
+    <img src="readm/postar01.png" alt="Blog Logo" width="300" height="auto">
 </header>
-
 <details>
     <summary>Índice</summary>
     <ol>
@@ -30,14 +24,12 @@
         <li><a href="#contato">Contato</a></li>
     </ol>
 </details>
-
 <section id="sobre-o-projeto">
     <h2>Sobre o projeto</h2>
     <p>Este projeto é um blog voltado para compartilhar conteúdos e tutoriais sobre programação, criado com Django e Python. A aplicação é responsiva, utilizando Bootstrap para estilização e layout.</p>
     <p>O objetivo é oferecer uma plataforma intuitiva para usuários lerem, compartilharem e comentarem postagens sobre programação e tecnologia, promovendo a interação e o aprendizado contínuo.</p>
     <p>Proposta de Valor: Oferecer um blog acessível, fácil de navegar e com conteúdo relevante sobre programação e desenvolvimento web, garantindo uma experiência agradável para os usuários.</p>
 </section>
-
 <section id="parte-tecnica">
     <h2>Parte Técnica</h2>
     <ul>
@@ -46,7 +38,6 @@
         <li>Banco de Dados: PostgreSQL é o banco de dados utilizado para armazenar informações de postagens, comentários, usuários e outras funcionalidades do blog.</li>
     </ul>
 </section>
-
 <section id="estrutura-dos-arquivos">
     <h2>Estrutura dos Arquivos</h2>
     <ul>
@@ -57,7 +48,6 @@
         <li><strong>manage.py</strong>: Comando de gerenciamento do Django.</li>
     </ul>
 </section>
-
 <section id="casos-de-uso">
     <h2>Casos de Uso</h2>
     <ul>
@@ -65,7 +55,6 @@
         <li><strong>Admin</strong>: Gerencia postagens, comentários e usuários através de um painel administrativo do Django.</li>
     </ul>
 </section>
-
 <section id="ferramentas">
     <h2>Ferramentas</h2>
     <ul>
@@ -77,7 +66,6 @@
         <li><img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Badge Git"></li>
     </ul>
 </section>
-
 <section id="contato">
     <h2>Contato</h2>
     <ul>
@@ -86,6 +74,5 @@
     </ul>
     <p>Acesse o projeto no Render.</p>
 </section>
-
 </body>
 </html>
