@@ -5,3 +5,4 @@ gunicorn==21.0.1
 dj-database-url==1.0.0
 whitenoise==6.5.0
 django-bootstrap4==23.3
+
