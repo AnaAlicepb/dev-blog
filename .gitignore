@@ -1,0 +1,40 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pydist
+
+# Django
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+/static_cdn
+/static
+
+# Envs Virtuais
+venv/
+env/
+env.bak/
+.env
+
+# Arquivos de configuração e dados sensíveis
+.env
+*.json
+*.key
+*.pem
+*.crt
+
+# IDEs e Ferramentas de Desenvolvimento
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db

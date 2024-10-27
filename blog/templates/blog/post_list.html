@@ -1,0 +1,313 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Blog Template for Bootstrap">
+        <meta name="author" content="Webublogoverflow">
+        <link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jbLkeg6InBB9Mcl0Rd/5l9UL2yRtR5P6wty+9ijM5NYQm5K1PqPt2KIszULh6fWPPX5fXtazir82FyiIxV4C8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Blog Sobre Programação</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Custom fonts and styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+
+<body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="#">DevBlog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BackEnd</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FrontEnd</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bancos de dados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cloud</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inteligência Artificial (IA)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ferramentas DevOps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mobile</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Buscar artigos..." aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <!-- Header Section -->
+  <div class="container">
+    <header class="blog-header py-3">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-4 pt-1">
+          <!-- Espaço reservado para futuras adições, como links ou menus laterais -->
+        </div>
+        <div class="col-4 text-center">
+          <a class="blog-header-logo text-dark" href="#">Dev Blog</a>
+        </div>
+        <div class="col-4 d-flex justify-content-end align-items-center">
+          <!-- Link para acessar a página do perfil do usuário ou do painel -->
+          <a class="btn btn-outline-primary btn-sm ml-3" href="https://www.linkedin.com/in/anaalice20" target="_blank">
+            <i class="fa fa-user mx-auto"></i> Meu Perfil
+          </a>
+
+        </div>
+      </div>
+    </header>
+
+    </header>
+
+    <!-- Navigation Links -->
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="#">Python</a>
+          <a class="p-2 text-muted" href="#">JavaScript</a>
+          <a class="p-2 text-muted" href="#">React</a>
+          <a class="p-2 text-muted" href="#">Vue.js</a>
+          <a class="p-2 text-muted" href="#">Django</a>
+          <a class="p-2 text-muted" href="#">Flask</a>
+          <a class="p-2 text-muted" href="#">Java</a>
+          <a class="p-2 text-muted" href="#">Spring Boot</a>
+          <a class="p-2 text-muted" href="#">Node.js</a>
+          <a class="p-2 text-muted" href="#">SQL</a>
+          <a class="p-2 text-muted" href="#">CSS</a>
+          <a class="p-2 text-muted" href="#">HTML</a>
+        </nav>
+      </div>
+
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-light text-center">
+        <div class="container">
+       <h1 class="jumbotron-heading text-dark">Programar?</h1>
+
+       {% load static %}
+       <img src="{% static 'img/01.jpg' %}" width="90%" height="auto"/>
+
+
+   </div>
+     </div>
+
+     <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Java</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="https://docs.oracle.com/en/java/" target="_blank">Iniciando com Java</a>
+              </h3>
+              <div class="mb-1 text-muted">27 de Outubro, 2024</div>
+              <p class="card-text mb-auto">Java é uma linguagem de programação poderosa, usada para criar aplicações robustas em diversas plataformas.</p>
+              <a href="https://www.youtube.com/watch?v=nODe5lFcGpg" target="_blank">Leia mais</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" src="{% static 'img/01.jpg' %}" alt="Imagem Java">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">HTML</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="https://observatorio3setor.org.br/iniciativas-ajudam-mulheres-a-ingressarem-no-mundo-da-programacao/" target="_blank">HTML é Programação?</a>
+              </h3>
+              <div class="mb-1 text-muted">20 de Outubro, 2024</div>
+              <p class="card-text mb-auto">HTML é a base da web, essencial para criar estruturas de páginas e fundamental no desenvolvimento web.</p>
+              <a href="https://www.youtube.com/watch?v=Fhy-5CtVkiM" target="_blank">Leia mais</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" src="{% static 'img/html.jpg' %}" alt="Imagem HTML">
+          </div>
+        </div>
+      </div>
+
+
+
+   </div>
+
+   <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-7 blog-main">
+        <h3 class="pb-4 mb-5 border-bottom">
+          Sobre linguagens da Programação
+        </h3>
+
+        <div class="blog-post">
+          <h2 class="blog-post-title">Introdução ao Django para Iniciantes</h2>
+          <p class="blog-post-meta">27 de Outubro, 2024 por <a href="#">Ana Alice</a></p>
+
+          <p>O Django é um framework de desenvolvimento web em Python, conhecido por sua simplicidade e eficiência. Neste post, vamos explorar o básico do Django, desde a instalação até a criação de um projeto inicial.</p>
+          <hr>
+          <blockquote>
+            <p>“O Django facilita a construção de aplicativos web de maneira rápida e segura.”</p>
+          </blockquote>
+          <p>Vamos abordar como configurar um ambiente de desenvolvimento, iniciar um novo projeto e entender a estrutura básica de um aplicativo Django. Este guia é voltado para iniciantes que querem começar a desenvolver suas aplicações web usando Python e Django.</p>
+          <h2>Configuração Inicial</h2>
+          <p>Para começar, instale o Django usando o comando:</p>
+          <pre><code>pip install django</code></pre>
+          <p>Após a instalação, você pode iniciar um novo projeto com o seguinte comando:</p>
+          <pre><code>django-admin startproject meu_projeto</code></pre>
+          <p>Agora, você está pronto para iniciar o servidor de desenvolvimento e explorar o Django.</p>
+          <div class="row">
+            <p>
+              <i class="fa fa-user-circle"></i> por <a href="#">Ana Alice</a>
+              | <i class="fa fa-comment"></i> <a href="#">12 Comentários</a>
+              | <i class="fa fa-share"></i> <a href="#">125 Compartilhamentos</a>
+              | <i class="fa fa-tags"></i> Tags:
+              <a href="#"><span class="badge badge-info">Django</span></a>
+              <a href="#"><span class="badge badge-info">Python</span></a>
+              <a href="#"><span class="badge badge-info">Web Development</span></a>
+            </p>
+          </div>
+        </div><!-- /.blog-post -->
+
+        <div class="blog-post">
+          <h2 class="blog-post-title">Boas Práticas em JavaScript</h2>
+          <p class="blog-post-meta">20 de Outubro, 2024 por <a href="#">Ana Alice</a></p>
+
+          <p>JavaScript é uma linguagem essencial para o desenvolvimento web moderno. Neste artigo, exploraremos algumas boas práticas para escrever código JavaScript mais limpo e eficiente.</p>
+          <ul>
+            <li><strong>Use Let e Const</strong> em vez de var para declarações de variáveis, para evitar problemas de escopo.</li>
+            <li><strong>Modularize seu código</strong> dividindo-o em funções menores e mais gerenciáveis.</li>
+            <li><strong>Evite o uso de callbacks aninhados</strong>, optando por Promises ou Async/Await para lidar com operações assíncronas.</li>
+          </ul>
+          <p>Seguindo essas dicas, você pode melhorar a qualidade do seu código e facilitar a manutenção de seus projetos JavaScript.</p>
+          <div class="row">
+            <p>
+              <i class="fa fa-user-circle"></i> por <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+              | <i class="fa fa-comment"></i> <a href="#">8 Comentários</a>
+              | <i class="fa fa-share"></i> <a href="#">95 Compartilhamentos</a>
+              | <i class="fa fa-tags"></i> Tags:
+              <a href="#"><span class="badge badge-info">JavaScript</span></a>
+              <a href="#"><span class="badge badge-info">Boas Práticas</span></a>
+              <a href="#"><span class="badge badge-info">Front-End</span></a>
+            </p>
+          </div>
+        </div><!-- /.blog-post -->
+
+        <div class="blog-post">
+          <h2 class="blog-post-title">Explorando o React para Aplicações Web</h2>
+          <p class="blog-post-meta">15 de Outubro, 2024 por <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a></p>
+
+          <p>React é uma biblioteca popular para criar interfaces de usuário interativas. Neste post, vamos explorar como começar a construir uma aplicação simples com React.</p>
+          <ul>
+            <li><strong>Componentização</strong>: React facilita a criação de componentes reutilizáveis, o que torna o código mais organizado.</li>
+            <li><strong>JSX</strong>: Uma extensão da sintaxe JavaScript que facilita a escrita de código HTML dentro do JavaScript.</li>
+            <li><strong>Gerenciamento de Estado</strong>: Como o React lida com mudanças de estado de forma eficiente e reativa.</li>
+          </ul>
+          <p>Se você é novo em React, este é o lugar perfeito para começar sua jornada de aprendizado.</p>
+          <div class="row">
+            <p>
+              <i class="fa fa-user-circle"></i> por <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+              | <i class="fa fa-comment"></i> <a href="#">15 Comentários</a>
+              | <i class="fa fa-share"></i> <a href="#">112 Compartilhamentos</a>
+              | <i class="fa fa-tags"></i> Tags:
+              <a href="#"><span class="badge badge-info">React</span></a>
+              <a href="#"><span class="badge badge-info">Front-End</span></a>
+              <a href="#"><span class="badge badge-info">JavaScript</span></a>
+            </p>
+          </div>
+        </div><!-- /.blog-post -->
+
+        <nav class="blog-pagination">
+          <a class="btn btn-outline-primary" href="#">Postagens Anteriores</a>
+          <a class="btn btn-outline-secondary disabled" href="#">Mais Recentes</a>
+        </nav>
+      </div><!-- /.blog-main -->
+
+      <aside class="col-md-4 blog-sidebar">
+        <div class="p-3 mb-3 bg-info rounded">
+          <h4 class="font-normal">Sobre o Blog</h4>
+          <p class="mb-0">O Dev Blog é um blog dedicado a compartilhar conhecimentos sobre programação, incluindo tutoriais, dicas de desenvolvimento e boas práticas para diversas linguagens e frameworks.</p>
+        </div>
+
+        <div class="p-3">
+          <h4 class="font-normal">Arquivos</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">Outubro 2024</a></li>
+            <li><a href="#">Setembro 2024</a></li>
+            <li><a href="#">Agosto 2024</a></li>
+            <li><a href="#">Julho 2024</a></li>
+            <li><a href="#">Junho 2024</a></li>
+          </ol>
+        </div>
+
+        <div class="p-3">
+            <h4 class="font-normal">Conecte-se</h4>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="https://github.com/AnaAlicepb" target="_blank" class="d-flex align-items-center">
+                        <i class="fab fa-github mr-2"></i> GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anaalice20/" target="_blank" class="d-flex align-items-center">
+                        <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://portifolio-web-2024.vercel.app/" target="_blank" class="d-flex align-items-center">
+                        <i class="fas fa-globe mr-2"></i> Portifólio
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+      </aside><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+  </main><!-- /.container -->
+
+  <footer class="blog-footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2">Blog desenvolvido por <strong>Ana Alice</strong> utilizando <strong>Django</strong>, <strong>Python</strong> e <strong>Bootstrap</strong> para compartilhar conhecimento em programação.</p>
+
+
+      <div class="social-icons mb-3">
+        <a href="https://github.com/" class="text-white mx-2" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://twitter.com/" class="text-white mx-2" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://linkedin.com/" class="text-white mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+
+      <p>
+        <a href="#" class="btn btn-outline-light">Voltar ao Topo</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+<!-- JavaScript -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
