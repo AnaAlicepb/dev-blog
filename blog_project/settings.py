@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l9#p)5nksn0@^6p3h_#!95i6z0bn-w#$s%dfzs5ay24fz(p4q*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -70,16 +70,32 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
+import os
+from pathlib import Path
+
+# Caminho base do projeto
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Configurações de banco de dados usando PostgreSQL
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dev-blog',
-        'USER': 'ana',
-        'PASSWORD': 'ana23578',
-        'HOST': 'seu_host_render',
-        'PORT': '5432',
+        'NAME': os.environ.get('DB_NAME', 'dev_blog'),  # Nome do banco de dados
+        'USER': os.environ.get('DB_USER', 'dev_blog_user'),  # Usuário do banco
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'YDQAwBPoDQ9RHKoCURtWrYtxhgwj6afe'),  # Senha do banco
+        'HOST': os.environ.get('DB_HOST', 'dpg-csfa0eggph6c73f1gft0-a'),  # Host do banco
+        'PORT': os.environ.get('DB_PORT', '5432'),  # Porta do banco
+        'OPTIONS': {
+            'options': '-c client_encoding=UTF8'  # Garantir codificação UTF-8
+        },
     }
 }
+
+
+
+
+
 
 
 
