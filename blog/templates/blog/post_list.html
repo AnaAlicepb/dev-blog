@@ -23,8 +23,10 @@
 
 <body>
  <!-- Navbar -->
- <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">DevBlog</a>
+ <nav class="navbar navbar-expand-lg  bg-light mb-4">
+  <img src="{% static 'img/logo1.png' %}" alt="logo" width="100" height="auto" class="d-inline-block align-top">
+
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,17 +49,17 @@
           <a class="nav-link" href="#">Cloud</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Inteligência Artificial (IA)</a>
+          <a class="nav-link" href="#"> (IA)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ferramentas DevOps</a>
+          <a class="nav-link" href="#"> DevOps</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Mobile</a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Buscar artigos..." aria-label="Buscar">
+        <input class="form-control mr-sm-2 " type="text" placeholder="Buscar artigos.." aria-label="Buscar">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
@@ -89,18 +91,18 @@
     <!-- Navigation Links -->
     <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="#">Python</a>
-          <a class="p-2 text-muted" href="#">JavaScript</a>
-          <a class="p-2 text-muted" href="#">React</a>
-          <a class="p-2 text-muted" href="#">Vue.js</a>
-          <a class="p-2 text-muted" href="#">Django</a>
-          <a class="p-2 text-muted" href="#">Flask</a>
-          <a class="p-2 text-muted" href="#">Java</a>
-          <a class="p-2 text-muted" href="#">Spring Boot</a>
-          <a class="p-2 text-muted" href="#">Node.js</a>
-          <a class="p-2 text-muted" href="#">SQL</a>
-          <a class="p-2 text-muted" href="#">CSS</a>
-          <a class="p-2 text-muted" href="#">HTML</a>
+          <a class="p-2 text-muted" href="https://docs.python.org/pt-br/3/" target="_blank">Python</a>
+          <a class="p-2 text-muted" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a>
+          <a class="p-2 text-muted" href="https://pt-br.legacy.reactjs.org/docs/getting-started.html" target="_blank">React</a>
+          <a class="p-2 text-muted" href="https://br.vuejs.org/v2/guide/index.html" target="_blank">Vue.js</a>
+          <a class="p-2 text-muted" href="https://docs.djangoproject.com/pt-br/5.1/" target="_blank">Django</a>
+          <a class="p-2 text-muted" href="https://flask-ptbr.readthedocs.io/en/latest/" target="_blank">Flask</a>
+          <a class="p-2 text-muted" href="https://docs.oracle.com/en/java/" target="_blank">Java</a>
+          <a class="p-2 text-muted" href="https://docs.spring.io/spring-boot/documentation.html" target="_blank">Spring Boot</a>
+          <a class="p-2 text-muted" href="https://nodejs.org/docs/latest/api/" target="_blank">Node.js</a>
+          <a class="p-2 text-muted" href="https://www.oracle.com/br/database/technologies/appdev/sql.html" target="_blank">SQL</a>
+          <a class="p-2 text-muted" href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS</a>
+          <a class="p-2 text-muted" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a>
         </nav>
       </div>
 
@@ -112,7 +114,9 @@
 
        {% load static %}
        <img src="{% static 'img/01.jpg' %}" width="90%" height="auto"/>
-
+       <h6 class="mt-1 text-muted" style="font-size: 0.8rem;">
+        Imagem retirada do site <a href="https://tripleten.com" target="_blank" rel="noopener noreferrer">TripleTen</a>.
+      </h6>
 
    </div>
      </div>
@@ -148,11 +152,7 @@
           </div>
         </div>
       </div>
-
-
-
    </div>
-
    <main role="main" class="container">
     <div class="row">
       <div class="col-md-7 blog-main">
@@ -235,6 +235,79 @@
               <a href="#"><span class="badge badge-info">JavaScript</span></a>
             </p>
           </div>
+          <div class="blog-post">
+            <h2 class="blog-post-title">Entendendo a Diferença entre Spring e Spring Boot</h2>
+            <p class="blog-post-meta">28 de Outubro, 2024 por
+              <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+            </p>
+
+            <p><strong>Spring</strong> e <strong>Spring Boot</strong> são ferramentas populares para o desenvolvimento de aplicações em Java, mas eles têm focos diferentes:</p>
+
+            <ul>
+              <li>
+                <strong>Spring</strong>: É um framework modular que oferece mais personalização. Você precisa configurar manualmente vários aspectos da aplicação, como injeção de dependência e configuração do servidor. É ideal para projetos maiores e complexos.
+              </li>
+              <li>
+                <strong>Spring Boot</strong>: É uma extensão do Spring que facilita o desenvolvimento, trazendo configuração automática, servidor embutido e dependências pré-configuradas. Ele é mais indicado para iniciar projetos rapidamente e criar microserviços.
+              </li>
+            </ul>
+
+            <p>Resumindo, o Spring oferece mais controle, enquanto o Spring Boot foca em convenções que simplificam a configuração e aceleram o desenvolvimento. Se você quer começar rapidamente com menos configuração, opte pelo Spring Boot.</p>
+
+            <div class="row">
+              <p>
+                <i class="fa fa-user-circle"></i> por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                | <i class="fa fa-comment"></i> <a href="#">20 Comentários</a>
+                | <i class="fa fa-share"></i> <a href="#">230 Compartilhamentos</a>
+                | <i class="fa fa-tags"></i> Tags:
+                <a href="#"><span class="badge badge-info">Java</span></a>
+                <a href="#"><span class="badge badge-info">Spring</span></a>
+                <a href="#"><span class="badge badge-info">Spring Boot</span></a>
+              </p>
+            </div>
+            <div class="blog-post">
+              <h2 class="blog-post-title">HTML: A Base da Web</h2>
+              <p class="blog-post-meta">28 de Outubro, 2024 por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+              </p>
+
+              <p>
+                <strong>HTML</strong> (HyperText Markup Language) não é uma linguagem de programação, mas sim uma linguagem de marcação. Isso significa que ele é usado para estruturar e organizar o conteúdo de uma página web, como textos, imagens, links, tabelas, entre outros.
+              </p>
+
+              <ul>
+                <li>
+                  <strong>Estrutura da Página:</strong> HTML define a estrutura básica de uma página web, permitindo que os desenvolvedores organizem o conteúdo em cabeçalhos, parágrafos, listas, etc.
+                </li>
+                <li>
+                  <strong>Fundamental para o Front-End:</strong> HTML é essencial para a criação de interfaces de usuário, funcionando como a base para outras tecnologias, como CSS (para estilização) e JavaScript (para interatividade).
+                </li>
+                <li>
+                  <strong>Semântica:</strong> A versão mais recente do HTML (HTML5) introduziu tags semânticas, como <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>, que melhoram a acessibilidade e a otimização para mecanismos de busca (SEO).
+                </li>
+              </ul>
+
+              <p>
+                Em resumo, o HTML é a espinha dorsal de qualquer site ou aplicação web, fornecendo a estrutura necessária para que o conteúdo seja exibido corretamente nos navegadores. Sem ele, não seria possível criar uma página web funcional.
+              </p>
+
+              <div class="row">
+                <p>
+                  <i class="fa fa-user-circle"></i> por
+                  <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                  | <i class="fa fa-comment"></i> <a href="#">18 Comentários</a>
+                  | <i class="fa fa-share"></i> <a href="#">150 Compartilhamentos</a>
+                  | <i class="fa fa-tags"></i> Tags:
+                  <a href="#"><span class="badge badge-info">HTML</span></a>
+                  <a href="#"><span class="badge badge-info">Web Development</span></a>
+                  <a href="#"><span class="badge badge-info">Front-End</span></a>
+                </p>
+              </div>
+            </div><!-- /.blog-post -->
+
+          </div><!-- /.blog-post -->
+
         </div><!-- /.blog-post -->
 
         <nav class="blog-pagination">
@@ -280,6 +353,12 @@
                 </li>
             </ul>
         </div>
+        
+
+
+
+
+
 
 
       </aside><!-- /.blog-sidebar -->

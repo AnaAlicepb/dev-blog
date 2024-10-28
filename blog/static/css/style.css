@@ -1,155 +1,329 @@
-/* Blog Header */
+/* Ajuste do corpo do documento */
+body {
+  font-family: 'Roboto'; /* Define a fonte padrão para o corpo */
+  margin: 0; /* Remove as margens */
+  padding: 0; /* Remove o preenchimento */
+  overflow-x: hidden; /* Impede o deslocamento horizontal */
+}
+
+/* Cabeçalho do blog */
 .blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
+  line-height: 1; /* Ajusta o espaçamento entre linhas */
+  border-bottom: 1px solid #e5e5e5; /* Adiciona uma linha inferior */
+
+}
+
+/* Logo do cabeçalho do blog */
+.blog-header-logo {
+  font-family: 'Roboto'; /* Define a fonte */
+  font-size: 2.25rem; /* Define o tamanho da fonte */
+
+}
+
+.blog-header-logo:hover {
+  text-decoration: none; /* Remove sublinhado ao passar o mouse */
+}
+
+/* Títulos (h1 a h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto'; /* Define a fonte para todos os títulos */
+}
+
+/* Títulos em destaque */
+.display-4 {
+  font-size: 2.5rem; /* Define tamanho do título em destaque */
+}
+
+/* Navegação com rolagem */
+.nav-scroller {
+  position: relative; /* Define posição relativa para alinhamento */
+  z-index: 2; /* Altera o nível de pilha do elemento */
+  height: 2.75rem; /* Define a altura do contêiner */
+  overflow-y: hidden; /* Oculta rolagem vertical */
+}
+
+.nav-scroller .nav {
+  display: flex; /* Usa flexbox para layout */
+  flex-wrap: nowrap; /* Impede quebra de linha */
+  padding-bottom: 1rem; /* Adiciona espaçamento inferior */
+  margin-top: -1px; /* Ajusta a margem superior */
+  overflow-x: auto; /* Adiciona rolagem horizontal */
+  text-align: center; /* Centraliza o texto */
+  white-space: nowrap; /* Impede a quebra de linha */
+  -webkit-overflow-scrolling: touch; /* Suporte a rolagem suave no iOS */
+}
+
+
+.nav-scroller .nav-link {
+  padding-top: .75rem; /* Adiciona preenchimento superior */
+  padding-bottom: .75rem; /* Adiciona preenchimento inferior */
+  font-size: .875rem; /* Define o tamanho da fonte */
+
+}
+.nav-link {
+  color: #333;
+
+}
+
+
+/* Imagem do lado direito do card */
+.card-img-right {
+  height: 100%; /* Ajusta a altura para ocupar todo o espaço */
+  border-radius: 0 3px 3px 0; /* Adiciona cantos arredondados no lado direito */
+  max-width: 280px; /* Define a largura máxima */
+}
+
+/* Utilidade de flexbox */
+.flex-auto {
+  flex: 0 0 auto; /* Define tamanho fixo sem expansão */
+}
+
+/* Ajuste de altura do card */
+.h-250 {
+  height: 250px; /* Define a altura fixa do card */
+}
+
+/* Utilidades de borda */
+.border-top {
+  border-top: 1px solid #e5e5e5; /* Adiciona borda superior */
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5; /* Adiciona borda inferior */
+}
+
+/* Sombra de caixa */
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); /* Adiciona sombra suave */
+}
+
+/* Nome e descrição do blog */
+.blog-title {
+  margin-bottom: 0; /* Remove margem inferior */
+  font-size: 2rem; /* Define tamanho do título */
+  font-weight: 400; /* Define peso da fonte */
+}
+
+.blog-description {
+  font-size: 1.1rem; /* Define tamanho da fonte */
+  color: #999; /* Define a cor do texto */
+}
+
+/* Paginação do blog */
+.blog-pagination {
+  margin-bottom: 4rem; /* Define margem inferior */
+}
+
+.blog-pagination > .btn {
+  border-radius: 2rem; /* Define cantos arredondados */
+}
+
+/* Postagens do blog */
+.blog-post {
+  margin-bottom: 4rem; /* Define margem inferior */
+}
+
+.blog-post-title {
+  margin-bottom: .25rem; /* Define margem inferior */
+  font-size: 2.5rem; /* Define tamanho do título da postagem */
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem; /* Define margem inferior */
+  color: #999; /* Define a cor do texto */
+}
+
+/* Rodapé do blog */
+.blog-footer {
+  padding: 2.5rem 0; /* Define espaçamento superior e inferior */
+  color: #999; /* Define cor do texto */
+  text-align: center; /* Centraliza o texto */
+  background-color: #f9f9f9; /* Define cor de fundo */
+  border-top: .05rem solid #e5e5e5; /* Adiciona borda superior */
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0; /* Remove margem inferior do último parágrafo */
+}
+
+/* Ajuste de imagem no card */
+.card-img-right {
+  max-width: 190px; /* Define largura máxima */
+  height: auto; /* Ajusta a altura automaticamente */
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas pequenas: 320px a 576px */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    text-align: center; /* Centraliza conteúdo da barra de navegação */
   }
 
-  .blog-header-logo {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.25rem;
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0; /* Adiciona margem vertical entre itens */
   }
 
-  .blog-header-logo:hover {
-    text-decoration: none;
+  .card {
+    margin-bottom: 1rem; /* Define margem inferior do card */
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+  .card-title {
+    font-size: 1.2rem; /* Reduz o tamanho do título do card */
   }
 
-  /* Display Titles */
-  .display-4 {
-    font-size: 2.5rem;
+  .card-text {
+    font-size: 0.9rem; /* Reduz o tamanho do texto do card */
   }
 
-  @media (min-width: 768px) {
-    .display-4 {
-      font-size: 3rem;
-    }
-    .blog-header-logo {
-      margin-left: -150px !important;
-    }
+  .container {
+    padding: 0 1rem; /* Adiciona preenchimento nas laterais */
+  }
+}
+
+/* Telas médias: 576px a 768px */
+@media (min-width: 576px) and (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 5px; /* Ajusta margem à direita dos itens */
+
   }
 
-  /* Navigation Scroller */
-  .nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
+  .card-title {
+    font-size: 1.4rem; /* Aumenta o tamanho do título do card */
   }
 
-  .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+  .card-text {
+    font-size: 1rem; /* Ajusta o tamanho do texto do card */
   }
 
-  .nav-scroller .nav-link {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    font-size: .875rem;
+  .container {
+    max-width: 540px; /* Define largura máxima do contêiner */
+  }
+}
+
+/* Telas grandes: 768px a 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 1rem; /* Reduz o espaçamento da navbar */
+    flex-direction: column; /* Empilha os itens da navbar */
+    align-items: center; /* Centraliza os itens */
+  }
+  .navbar-nav {
+    margin-top: 0.5rem; /* Adiciona um pequeno espaçamento superior */
+  }
+  .nav-link {
+    font-size: 1rem; /* Ajusta o tamanho do texto dos links da navbar */
+    padding: 0.4rem 0.5rem; /* Ajusta o espaçamento interno dos links */
   }
 
-  /* Card Image */
-  .card-img-right {
-    height: 100%;
-    border-radius: 0 3px 3px 0;
-    max-width: 280px;
+  .nav-item {
+    margin: 0.3rem 0; /* Adiciona espaçamento entre os itens */
   }
 
-  /* Flex Utility */
-  .flex-auto {
-    flex: 0 0 auto;
+  .navbar-toggler {
+    margin-bottom: 0.5rem; /* Ajusta a margem inferior do botão de toggle */
   }
 
-  /* Card Height Adjustment */
-  .h-250 {
-    height: 250px;
+
+  .card-title {
+    font-size: 1.5rem; /* Aumenta o tamanho do título do card */
   }
 
-  @media (min-width: 768px) {
-    .h-md-250 {
-      height: 250px;
-    }
+  .card-text {
+    font-size: 1.1rem; /* Ajusta o tamanho do texto do card */
   }
 
-  /* Border Utilities */
-  .border-top {
-    border-top: 1px solid #e5e5e5;
+  .container {
+    max-width: 720px; /* Define largura máxima do contêiner */
   }
-
-  .border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  /* Box Shadow */
-  .box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-  }
-
-  /* Blog Name and Description */
-  .blog-title {
-    margin-bottom: 0;
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .blog-description {
-    font-size: 1.1rem;
-    color: #999;
-  }
-
-  @media (min-width: 40em) {
-    .blog-title {
-      font-size: 3.5rem;
-    }
-  }
-
-  /* Pagination */
-  .blog-pagination {
-    margin-bottom: 4rem;
-  }
-
-  .blog-pagination > .btn {
-    border-radius: 2rem;
-  }
-
-  /* Blog Posts */
-  .blog-post {
-    margin-bottom: 4rem;
-  }
-
-  .blog-post-title {
-    margin-bottom: .25rem;
-    font-size: 2.5rem;
-  }
-
-  .blog-post-meta {
-    margin-bottom: 1.25rem;
-    color: #999;
-  }
-
-  /* Footer */
+  /* Ajuste do Footer */
   .blog-footer {
-    padding: 2.5rem 0;
-    color: #999;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: .05rem solid #e5e5e5;
+    padding: 1.5rem 1rem; /* Ajusta o espaçamento do footer */
+    text-align: center; /* Centraliza o texto do footer */
   }
 
-  .blog-footer p:last-child {
-    margin-bottom: 0;
+  .blog-footer p {
+    margin: 0.5rem 0; /* Adiciona espaçamento entre os parágrafos */
   }
 
-  /* Ajuste de Imagem do Card */
-  .card-img-right {
-    max-width: 280px;
-    height: auto;
+  .footer-links {
+    margin-top: 0.5rem; /* Adiciona um pequeno espaçamento acima dos links */
   }
+}
+
+/* Telas maiores: 992px a 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    padding: 1rem 3rem; /* Aumenta o preenchimento da barra de navegação */
+  }
+
+  .card-title {
+    font-size: 1.8rem; /* Aumenta o tamanho do título do card */
+  }
+
+  .card-text {
+    font-size: 1.2rem; /* Ajusta o tamanho do texto do card */
+  }
+
+  .container {
+    max-width: 960px; /* Define largura máxima do contêiner */
+  }
+}
+
+/* Telas muito grandes: 1200px a 1440px */
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .navbar {
+    padding: 1.2rem 4rem; /* Aumenta o preenchimento da barra de navegação */
+  }
+
+  .card-title {
+    font-size: 2rem; /* Aumenta o tamanho do título do card */
+  }
+
+  .card-text {
+    font-size: 1.3rem; /* Ajusta o tamanho do texto do card */
+  }
+
+  .container {
+    max-width: 1140px; /* Define largura máxima do contêiner */
+  }
+}
+
+/* Telas maiores: acima de 1440px */
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 1.5rem 5rem; /* Aumenta o preenchimento da barra de navegação */
+  }
+
+  .card-title {
+    font-size: 2.2rem; /* Aumenta o tamanho do título do card */
+  }
+
+  .card-text {
+    font-size: 1.4rem; /* Ajusta o tamanho do texto do card */
+  }
+
+  .container {
+    max-width: 1280px; /* Define largura máxima do contêiner */
+  }
+}
+
+/* Telas ultra-grandes: acima de 1920px */
+@media (min-width: 1920px) {
+  .navbar {
+    padding: 2rem 6rem; /* Aumenta o preenchimento da barra de navegação */
+  }
+
+  .card-title {
+    font-size: 2.5rem; /* Aumenta o tamanho do título do card */
+  }
+
+  .card-text {
+    font-size: 1.6rem; /* Ajusta o tamanho do texto do card */
+  }
+
+  .container {
+    max-width: 1600px; /* Define largura máxima do contêiner */
+  }
+  
+}
