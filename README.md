@@ -70,7 +70,7 @@
     <h2>Contato</h2>
     <ul>
         <li><a href="https://linktr.ee/anaeanali5" target="_blank"><img src="https://img.shields.io/badge/Ana_Alice_Rodrigues-blue?style=for-the-badge" alt="Perfil de Ana Alice Rodrigues"></a></li>
-        <li><a href="[https://meuprojeto.render.com](https://blog-django-3ko4.onrender.com)" target="_blank"><img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Hospedado no Render"></a></li>
+        <li><a href="https://blog-django-3ko4.onrender.com/" target="_blank"><img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Hospedado no Render"></a></li>
     </ul>
     <p>Acesse o projeto no Render.</p>
 </section>
