@@ -37,7 +37,7 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">BackEnd</a>
+          <a class="nav-link" href="{% url 'backend_view' %}" target="_blank">BackEnd</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">FrontEnd</a>
@@ -100,6 +100,8 @@
           <a class="p-2 text-muted" href="https://docs.oracle.com/en/java/" target="_blank">Java</a>
           <a class="p-2 text-muted" href="https://docs.spring.io/spring-boot/documentation.html" target="_blank">Spring Boot</a>
           <a class="p-2 text-muted" href="https://nodejs.org/docs/latest/api/" target="_blank">Node.js</a>
+          <a class="p-2 text-muted" href="" target="_blank">PHP</a>
+          <a class="p-2 text-muted" href="" target="_blank">Laravel</a>
           <a class="p-2 text-muted" href="https://www.oracle.com/br/database/technologies/appdev/sql.html" target="_blank">SQL</a>
           <a class="p-2 text-muted" href="https://www.w3schools.com/cssref/index.php" target="_blank">CSS</a>
           <a class="p-2 text-muted" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a>
@@ -325,11 +327,11 @@
         <div class="p-3">
           <h4 class="font-normal">Arquivos</h4>
           <ol class="list-unstyled mb-0">
-            <li><a href="#">Outubro 2024</a></li>
-            <li><a href="#">Setembro 2024</a></li>
-            <li><a href="#">Agosto 2024</a></li>
-            <li><a href="#">Julho 2024</a></li>
-            <li><a href="#">Junho 2024</a></li>
+            <li><a href="https://www.youtube.com/watch?v=CYcGbW5QOH8" target="_blank">Outubro 2024</a></li>
+            <li><a href="https://www.youtube.com/watch?v=e9EPb5AoMf8" target="_blank">Setembro 2024</a></li>
+            <li><a href="https://www.youtube.com/watch?v=kMznyI7r2Tc" target="_blank">Agosto 2024</a></li>
+            <li><a href="https://www.youtube.com/watch?v=bEl6yN3vd-U" target="_blank">Julho 2024</a></li>
+            <li><a href="https://www.youtube.com/@michaelti4720" target="_blank">Junho 2024</a></li>
           </ol>
         </div>
 
@@ -353,14 +355,6 @@
                 </li>
             </ul>
         </div>
-        
-
-
-
-
-
-
-
       </aside><!-- /.blog-sidebar -->
     </div><!-- /.row -->
   </main><!-- /.container -->
@@ -375,15 +369,11 @@
         <a href="https://twitter.com/" class="text-white mx-2" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
         <a href="https://linkedin.com/" class="text-white mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
       </div>
-
       <p>
         <a href="#" class="btn btn-outline-light">Voltar ao Topo</a>
       </p>
     </div>
   </footer>
-
-
-
 <!-- JavaScript -->
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>

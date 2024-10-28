@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backend</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- jQuery e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/backend.css' %}">
+</head>
+<body>
+    <div class="container">
+
+            <!-- Posts -->
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 class="text-center">O que é Backend?</h1>
+                        <img src="{% static 'img/bac.jpg' %} "alt="backend" class="img-responsive img-thumbnail center-block">
+                        <p class="lead text-justify">
+                            O backend é a parte de uma aplicação ou sistema responsável por lidar com a lógica de negócios, o gerenciamento de dados e a interação com o banco de dados, servidores, APIs, entre outros serviços. Ele processa solicitações vindas do frontend (parte visível para o usuário), executa as operações necessárias e envia as respostas apropriadas.
+                        </p>
+                        <h2>O que o backend faz:</h2>
+                        <p class="text-justify">
+                            Processamento de Regras de Negócio: Ele implementa a lógica central do sistema, como verificar se um usuário tem permissão para acessar uma funcionalidade, calcular preços, gerenciar transações, entre outros.
+
+                            Gerenciamento de Dados: O backend conecta-se ao banco de dados, recupera, insere, atualiza ou exclui informações. Por exemplo, quando um usuário envia um formulário, os dados são salvos no banco de dados por meio do backend.
+
+                            Comunicação com APIs: Se a aplicação precisa de informações de outros serviços, o backend realiza as chamadas a APIs externas, coleta dados e os disponibiliza para o frontend.
+
+                            Autenticação e Autorização: Controla quem pode acessar certas partes da aplicação, verificando credenciais e atribuindo permissões de acesso.
+
+                            Segurança: Ele implementa medidas de segurança para proteger os dados e evitar acessos não autorizados ou ataques.
+
+                            Integração com Serviços: O backend se conecta a outros sistemas, como provedores de pagamento, sistemas de mensagens, serviços de e-mail, etc.
+                        </p>
+                        <h2>Origem do Backend</h2>
+                        <p class="text-justify">
+                            O conceito de backend começou a ganhar forma com o advento dos primeiros computadores de grande porte, na década de 1950. Esses computadores foram projetados para processar grandes volumes de dados em servidores centrais. Inicialmente, a comunicação entre o frontend (aplicações de terminal simples) e o backend (servidores de processamento de dados) era direta e limitada.
+
+                            Nos anos 1990, com a popularização da Internet, o backend evoluiu para suportar aplicações mais complexas, como websites dinâmicos e sistemas de e-commerce. Linguagens como PHP, Java, Python e, mais recentemente, Node.js, tornaram-se populares para o desenvolvimento de backend.
+                        </p>
+                        <h2>Arquitetura do Backend</h2>
+                        <p class="text-justify">
+                            O backend pode seguir diferentes tipos de arquitetura:
+
+                            Monolítica: Toda a aplicação é construída em uma única unidade, o que facilita o desenvolvimento inicial, mas pode dificultar a manutenção conforme a aplicação cresce.
+
+                            Microserviços: A aplicação é dividida em serviços menores e independentes, cada um com uma responsabilidade específica. Isso melhora a escalabilidade e a manutenção.
+
+                            Serverless: O backend é construído em funções que são executadas apenas quando solicitadas, o que reduz custos e otimiza o uso de recursos.
+                        </p>
+                        <h2>Ferramentas e Tecnologias do Backend</h2>
+                        <p class="text-justify">
+                            Linguagens de Programação: Java, Python, PHP, C#, JavaScript (Node.js), Ruby, entre outras.
+                            Bancos de Dados: MySQL, PostgreSQL, MongoDB, Redis, etc.
+                            Frameworks: Spring Boot, Django, Laravel, Express.js, etc.
+                            Servidores Web: Apache, Nginx, Microsoft IIS.
+                            Protocolo de Comunicação: HTTP/HTTPS, RESTful APIs, GraphQL.
+                        </p>
+                        <h3>Video do canal da Stephanie Cardoso </h3>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qrBDRQ86d9c" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

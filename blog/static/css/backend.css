@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto'; /* Define a fonte 'Roboto' para o corpo da página */
+}
+
+.container {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px ao container */
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    max-width: 100%; /* Largura máxima de 100% */
+    padding: 20px; /* Adiciona preenchimento para evitar bordas encostadas */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    }
+
+    .col-md-9 {
+        max-width: 800px; /* Define uma largura máxima para o conteúdo */
+        width: 100%; /* Torna o elemento responsivo */
+    }
+
+}
+
+.text-justify {
+    text-align: justify; /* Justifica o texto dentro do elemento */
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px */
+    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
+}
+
+.text-center {
+    text-align: center; /* Centraliza o texto no elemento */
+    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
+}
+
+
+
+.panel-body h1,
+.panel-body h2 {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px aos títulos H1 e H2 */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px aos títulos H1 e H2 */
+    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
+}
+
+.panel-body h2 {
+    color: #007bff; /* Define a cor do texto H2 para azul */
+}
+
+.panel-body p {
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px aos parágrafos */
+}
+
+.img-thumbnail {
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15px às imagens com a classe 'img-thumbnail' */
+}
+
+.embed-responsive {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px ao elemento responsivo */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px ao elemento responsivo */
+}
+
+.btn-blog {
+    color: #ffffff; /* Define a cor do texto do botão como branco */
+    background-color: #007bff; /* Define o fundo do botão como azul */
+    border-color: #007bff; /* Define a cor da borda do botão como azul */
+    border-radius: 0; /* Remove o arredondamento das bordas do botão */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px ao botão */
+}
+
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white; /* Define a cor do texto como branco ao interagir com o botão */
+    background-color: #0056b3; /* Altera o fundo para um azul mais escuro ao interagir com o botão */
+    border-color: #0056b3; /* Altera a cor da borda para azul mais escuro ao interagir com o botão */
+}
+
+.blogShort {
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda inferior cinza clara */
+}
+
+.add {
+    background: #333; /* Define o fundo como cinza escuro */
+    padding: 10%; /* Adiciona um preenchimento de 10% ao redor do conteúdo */
+    height: 300px; /* Define a altura do elemento como 300px */
+}
+
+.nav-sidebar {
+    width: 100%; /* Define a largura do elemento como 100% */
+    padding: 8px 0; /* Adiciona um preenchimento de 8px acima e abaixo do conteúdo */
+    border-right: 1px solid #ddd; /* Adiciona uma borda direita cinza clara */
+}
+
+.nav-sidebar a {
+    color: #333; /* Define a cor do texto dos links como cinza escuro */
+    transition: all 0.08s linear; /* Adiciona uma transição suave a todas as propriedades */
+}
+
+.nav-sidebar .active a {
+    cursor: default; /* Define o cursor como padrão */
+    background-color: #007bff; /* Define o fundo do link ativo como azul */
+    color: #fff; /* Define a cor do texto do link ativo como branco */
+}
+
+.nav-sidebar .active a:hover {
+    background-color: #007bff; /* Mantém o fundo azul ao passar o mouse no link ativo */
+}
+
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap; /* Impede a quebra de linha no texto */
+    overflow: hidden; /* Oculta o texto que ultrapassa o tamanho do elemento */
+    text-overflow: ellipsis; /* Adiciona reticências (...) ao texto que não cabe */
+}
+
+.margin10 {
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
+    margin-right: 10px; /* Adiciona uma margem à direita de 10px */
+}
