@@ -1,25 +1,30 @@
 {% load static %}
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Blog Template for Bootstrap">
-        <meta name="author" content="Webublogoverflow">
-        <link rel="icon" href="{% static 'img/favicon.ico' %}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Blog Template for Bootstrap">
+    <meta name="author" content="Webublogoverflow">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
 
-        <!-- Font Awesome for Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jbLkeg6InBB9Mcl0Rd/5l9UL2yRtR5P6wty+9ijM5NYQm5K1PqPt2KIszULh6fWPPX5fXtazir82FyiIxV4C8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jbLkeg6InBB9Mcl0Rd/5l9UL2yRtR5P6wty+9ijM5NYQm5K1PqPt2KIszULh6fWPPX5fXtazir82FyiIxV4C8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <title>Blog Sobre Programação</title>
+    <title>Blog Sobre Programação</title>
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        <!-- Custom fonts and styles -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </head>
+    <!-- Custom fonts and styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- jQuery, Popper.js, and Bootstrap JS (necessary for Bootstrap 4) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBkN2LkY308pD9z7U7P90d3e5r7v9E4HR+5FJ1Ts9" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
 
 <body>
  <!-- Navbar -->
@@ -112,18 +117,43 @@
     <!-- Jumbotron -->
     <div class="jumbotron p-3 p-md-5 text-white rounded bg-light text-center">
         <div class="container">
-       <h1 class="jumbotron-heading text-dark">Programar?</h1>
+        <h1 class="jumbotron-heading text-dark">Programar?</h1>
 
-       {% load static %}
-       <img src="{% static 'img/01.jpg' %}" width="90%" height="auto"/>
-       <h6 class="mt-1 text-muted" style="font-size: 0.8rem;">
-        Imagem retirada do site <a href="https://tripleten.com" target="_blank" rel="noopener noreferrer">TripleTen</a>.
-      </h6>
+        {% load static %}
+        <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/carosel.jpg' %}" class="d-block w-100" alt="01">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Desenvolvimento Focado</h5>
+              <p>Programação em um ambiente profissional, com foco em escrever código eficiente e produtivo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carosel1.jpg' %}" class="d-block w-100" alt="02">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Design de Interface Intuitiva</h5>
+              <p>Criação de interfaces focadas na experiência do usuário, combinando estética e funcionalidade para um design eficiente.</p>
 
-   </div>
-     </div>
-
-     <div class="row mb-2">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/carosel2.jpg' %}" class="d-block w-100" alt="03">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Codificação Avançada</h5>
+              <p>Trabalho com código em projetos complexos, usando tecnologias modernas para entregar soluções robustas e escaláveis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 box-shadow">
             <div class="card-body d-flex flex-column align-items-start">
@@ -135,7 +165,7 @@
               <p class="card-text mb-auto">Java é uma linguagem de programação poderosa, usada para criar aplicações robustas em diversas plataformas.</p>
               <a href="https://www.youtube.com/watch?v=nODe5lFcGpg" target="_blank">Leia mais</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-lg-block" src="{% static 'img/01.jpg' %}" alt="Imagem Java">
+            <img class="card-img-right flex-auto d-none d-lg-block" src="{% static 'img/javacard.jpg' %}" alt="Imagem Java">
           </div>
         </div>
 
@@ -154,8 +184,8 @@
           </div>
         </div>
       </div>
-   </div>
-   <main role="main" class="container">
+    </div>
+    <main role="main" class="container">
     <div class="row">
       <div class="col-md-7 blog-main">
         <h3 class="pb-4 mb-5 border-bottom">
@@ -190,11 +220,10 @@
             </p>
           </div>
         </div><!-- /.blog-post -->
-
+        <hr>
         <div class="blog-post">
           <h2 class="blog-post-title">Boas Práticas em JavaScript</h2>
           <p class="blog-post-meta">20 de Outubro, 2024 por <a href="#">Ana Alice</a></p>
-
           <p>JavaScript é uma linguagem essencial para o desenvolvimento web moderno. Neste artigo, exploraremos algumas boas práticas para escrever código JavaScript mais limpo e eficiente.</p>
           <ul>
             <li><strong>Use Let e Const</strong> em vez de var para declarações de variáveis, para evitar problemas de escopo.</li>
@@ -214,36 +243,59 @@
             </p>
           </div>
         </div><!-- /.blog-post -->
+        <hr>
 
-        <div class="blog-post">
-          <h2 class="blog-post-title">Explorando o React para Aplicações Web</h2>
-          <p class="blog-post-meta">15 de Outubro, 2024 por <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a></p>
+        <div class="blog-posts">
 
-          <p>React é uma biblioteca popular para criar interfaces de usuário interativas. Neste post, vamos explorar como começar a construir uma aplicação simples com React.</p>
-          <ul>
-            <li><strong>Componentização</strong>: React facilita a criação de componentes reutilizáveis, o que torna o código mais organizado.</li>
-            <li><strong>JSX</strong>: Uma extensão da sintaxe JavaScript que facilita a escrita de código HTML dentro do JavaScript.</li>
-            <li><strong>Gerenciamento de Estado</strong>: Como o React lida com mudanças de estado de forma eficiente e reativa.</li>
-          </ul>
-          <p>Se você é novo em React, este é o lugar perfeito para começar sua jornada de aprendizado.</p>
-          <div class="row">
-            <p>
-              <i class="fa fa-user-circle"></i> por <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
-              | <i class="fa fa-comment"></i> <a href="#">15 Comentários</a>
-              | <i class="fa fa-share"></i> <a href="#">112 Compartilhamentos</a>
-              | <i class="fa fa-tags"></i> Tags:
-              <a href="#"><span class="badge badge-info">React</span></a>
-              <a href="#"><span class="badge badge-info">Front-End</span></a>
-              <a href="#"><span class="badge badge-info">JavaScript</span></a>
-            </p>
-          </div>
+          <!-- Postagem 1 -->
           <div class="blog-post">
-            <h2 class="blog-post-title">Entendendo a Diferença entre Spring e Spring Boot</h2>
-            <p class="blog-post-meta">28 de Outubro, 2024 por
+            <h2 class="blog-post-title">Explorando o React para Aplicações Web</h2>
+            <p class="blog-post-meta">
+              15 de Outubro, 2024 por
               <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
             </p>
 
-            <p><strong>Spring</strong> e <strong>Spring Boot</strong> são ferramentas populares para o desenvolvimento de aplicações em Java, mas eles têm focos diferentes:</p>
+            <p>
+              React é uma biblioteca popular para criar interfaces de usuário interativas. Neste post, vamos explorar como começar a construir uma aplicação simples com React.
+            </p>
+
+            <ul>
+              <li><strong>Componentização</strong>: React facilita a criação de componentes reutilizáveis, o que torna o código mais organizado.</li>
+              <li><strong>JSX</strong>: Uma extensão da sintaxe JavaScript que facilita a escrita de código HTML dentro do JavaScript.</li>
+              <li><strong>Gerenciamento de Estado</strong>: Como o React lida com mudanças de estado de forma eficiente e reativa.</li>
+            </ul>
+
+            <p>
+              Se você é novo em React, este é o lugar perfeito para começar sua jornada de aprendizado.
+            </p>
+
+            <div class="row">
+              <p>
+                <i class="fa fa-user-circle"></i> por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                | <i class="fa fa-comment"></i> <a href="#">15 Comentários</a>
+                | <i class="fa fa-share"></i> <a href="#">112 Compartilhamentos</a>
+                | <i class="fa fa-tags"></i> Tags:
+                <a href="#"><span class="badge badge-info">React</span></a>
+                <a href="#"><span class="badge badge-info">Front-End</span></a>
+                <a href="#"><span class="badge badge-info">JavaScript</span></a>
+              </p>
+            </div>
+
+            <hr>
+          </div><!-- /.blog-post -->
+
+          <!-- Postagem 2 -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Entendendo a Diferença entre Spring e Spring Boot</h2>
+            <p class="blog-post-meta">
+              28 de Outubro, 2024 por
+              <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+            </p>
+
+            <p>
+              <strong>Spring</strong> e <strong>Spring Boot</strong> são ferramentas populares para o desenvolvimento de aplicações em Java, mas eles têm focos diferentes:
+            </p>
 
             <ul>
               <li>
@@ -254,7 +306,9 @@
               </li>
             </ul>
 
-            <p>Resumindo, o Spring oferece mais controle, enquanto o Spring Boot foca em convenções que simplificam a configuração e aceleram o desenvolvimento. Se você quer começar rapidamente com menos configuração, opte pelo Spring Boot.</p>
+            <p>
+              Resumindo, o Spring oferece mais controle, enquanto o Spring Boot foca em convenções que simplificam a configuração e aceleram o desenvolvimento. Se você quer começar rapidamente com menos configuração, opte pelo Spring Boot.
+            </p>
 
             <div class="row">
               <p>
@@ -268,49 +322,209 @@
                 <a href="#"><span class="badge badge-info">Spring Boot</span></a>
               </p>
             </div>
-            <div class="blog-post">
-              <h2 class="blog-post-title">HTML: A Base da Web</h2>
-              <p class="blog-post-meta">28 de Outubro, 2024 por
-                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
-              </p>
 
-              <p>
-                <strong>HTML</strong> (HyperText Markup Language) não é uma linguagem de programação, mas sim uma linguagem de marcação. Isso significa que ele é usado para estruturar e organizar o conteúdo de uma página web, como textos, imagens, links, tabelas, entre outros.
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Estrutura da Página:</strong> HTML define a estrutura básica de uma página web, permitindo que os desenvolvedores organizem o conteúdo em cabeçalhos, parágrafos, listas, etc.
-                </li>
-                <li>
-                  <strong>Fundamental para o Front-End:</strong> HTML é essencial para a criação de interfaces de usuário, funcionando como a base para outras tecnologias, como CSS (para estilização) e JavaScript (para interatividade).
-                </li>
-                <li>
-                  <strong>Semântica:</strong> A versão mais recente do HTML (HTML5) introduziu tags semânticas, como <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>, que melhoram a acessibilidade e a otimização para mecanismos de busca (SEO).
-                </li>
-              </ul>
-
-              <p>
-                Em resumo, o HTML é a espinha dorsal de qualquer site ou aplicação web, fornecendo a estrutura necessária para que o conteúdo seja exibido corretamente nos navegadores. Sem ele, não seria possível criar uma página web funcional.
-              </p>
-
-              <div class="row">
-                <p>
-                  <i class="fa fa-user-circle"></i> por
-                  <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
-                  | <i class="fa fa-comment"></i> <a href="#">18 Comentários</a>
-                  | <i class="fa fa-share"></i> <a href="#">150 Compartilhamentos</a>
-                  | <i class="fa fa-tags"></i> Tags:
-                  <a href="#"><span class="badge badge-info">HTML</span></a>
-                  <a href="#"><span class="badge badge-info">Web Development</span></a>
-                  <a href="#"><span class="badge badge-info">Front-End</span></a>
-                </p>
-              </div>
-            </div><!-- /.blog-post -->
-
+            <hr>
           </div><!-- /.blog-post -->
 
-        </div><!-- /.blog-post -->
+          <!-- Postagem 3 -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">HTML: A Base da Web</h2>
+            <p class="blog-post-meta">
+              28 de Outubro, 2024 por
+              <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+            </p>
+
+            <p>
+              <strong>HTML</strong> (HyperText Markup Language) não é uma linguagem de programação, mas sim uma linguagem de marcação. Isso significa que ele é usado para estruturar e organizar o conteúdo de uma página web, como textos, imagens, links, tabelas, entre outros.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Estrutura da Página:</strong> HTML define a estrutura básica de uma página web, permitindo que os desenvolvedores organizem o conteúdo em cabeçalhos, parágrafos, listas, etc.
+              </li>
+              <li>
+                <strong>Fundamental para o Front-End:</strong> HTML é essencial para a criação de interfaces de usuário, funcionando como a base para outras tecnologias, como CSS (para estilização) e JavaScript (para interatividade).
+              </li>
+              <li>
+                <strong>Semântica:</strong> A versão mais recente do HTML (HTML5) introduziu tags semânticas, como <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code> e <code>&lt;footer&gt;</code>, que melhoram a acessibilidade e a otimização para os mecanismos de busca (SEO).
+              </li>
+            </ul>
+
+            <p>
+              Em resumo, o HTML é a espinha dorsal de qualquer site ou aplicação web, fornecendo a estrutura necessária para que o conteúdo seja exibido corretamente nos navegadores. Sem ele, não seria possível criar uma página web funcional.
+            </p>
+
+            <div class="row">
+              <p>
+                <i class="fa fa-user-circle"></i> por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                | <i class="fa fa-comment"></i> <a href="#">18 Comentários</a>
+                | <i class="fa fa-share"></i> <a href="#">150 Compartilhamentos</a>
+                | <i class="fa fa-tags"></i> Tags:
+                <a href="#"><span class="badge badge-info">HTML</span></a>
+                <a href="#"><span class="badge badge-info">Web Development</span></a>
+                <a href="#"><span class="badge badge-info">Front-End</span></a>
+              </p>
+            </div>
+
+            <hr>
+          </div><!-- /.blog-post -->
+
+          <!-- Postagem 4 -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Introdução ao CSS para Estilização de Páginas Web</h2>
+            <p class="blog-post-meta">
+              10 de Novembro, 2024 por
+              <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+            </p>
+
+            <p>
+              <strong>CSS</strong> (Cascading Style Sheets) é a linguagem usada para descrever a apresentação de um documento escrito em HTML ou XML. Ele permite que você controle o layout, cores, fontes e outros aspectos visuais das suas páginas web.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Seletores:</strong> Permitem que você escolha quais elementos HTML serão estilizados.
+              </li>
+              <li>
+                <strong>Box Model:</strong> Conceito fundamental que descreve como os elementos são renderizados em termos de margem, borda, preenchimento e conteúdo.
+              </li>
+              <li>
+                <strong>Flexbox e Grid:</strong> Ferramentas poderosas para criar layouts responsivos e complexos de forma simples.
+              </li>
+            </ul>
+
+            <p>
+              Dominar o CSS é essencial para criar interfaces de usuário atraentes e funcionais. No próximo post, exploraremos como combinar CSS com frameworks como Bootstrap para acelerar o desenvolvimento.
+            </p>
+
+            <div class="row">
+              <p>
+                <i class="fa fa-user-circle"></i> por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                | <i class="fa fa-comment"></i> <a href="#">22 Comentários</a>
+                | <i class="fa fa-share"></i> <a href="#">180 Compartilhamentos</a>
+                | <i class="fa fa-tags"></i> Tags:
+                <a href="#"><span class="badge badge-info">CSS</span></a>
+                <a href="#"><span class="badge badge-info">Web Design</span></a>
+                <a href="#"><span class="badge badge-info">Front-End</span></a>
+              </p>
+            </div>
+
+            <hr>
+          </div><!-- /.blog-post -->
+
+          <!-- Postagem 5 -->
+          <div class="blog-post">
+            <h2 class="blog-post-title">Introdução ao JavaScript para Interatividade Web</h2>
+            <p class="blog-post-meta">
+              20 de Novembro, 2024 por
+              <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+            </p>
+
+            <p>
+              <strong>JavaScript</strong> é uma linguagem de programação essencial para adicionar interatividade às páginas web. Com ele, você pode criar desde simples animações até aplicações web complexas.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Manipulação do DOM:</strong> Permite que você altere o conteúdo e a estrutura da página dinamicamente.
+              </li>
+              <li>
+                <strong>Eventos:</strong> Facilita a resposta a ações do usuário, como cliques e movimentos do mouse.
+              </li>
+              <li>
+                <strong>AJAX:</strong> Permite a comunicação assíncrona com servidores, melhorando a experiência do usuário sem recarregar a página.
+              </li>
+            </ul>
+
+            <p>
+              Aprender JavaScript é fundamental para qualquer desenvolvedor front-end. Nos próximos posts, exploraremos frameworks e bibliotecas populares que ampliam as capacidades do JavaScript.
+            </p>
+
+            <div class="row">
+              <p>
+                <i class="fa fa-user-circle"></i> por
+                <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+                | <i class="fa fa-comment"></i> <a href="#">25 Comentários</a>
+                | <i class="fa fa-share"></i> <a href="#">200 Compartilhamentos</a>
+                | <i class="fa fa-tags"></i> Tags:
+                <a href="#"><span class="badge badge-info">JavaScript</span></a>
+                <a href="#"><span class="badge badge-info">Web Development</span></a>
+                <a href="#"><span class="badge badge-info">Front-End</span></a>
+              </p>
+            </div>
+
+            <hr>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-posts -->
+        <!-- Postagem 6 -->
+<div class="blog-post">
+  <h2 class="blog-post-title">Angular: Importância e Evolução no Desenvolvimento Web</h2>
+  <p class="blog-post-meta">
+    25 de Novembro, 2024 por
+    <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+  </p>
+
+  <p>
+    <strong>Angular</strong> é um framework robusto e amplamente utilizado para o desenvolvimento de aplicações web dinâmicas e de alta performance. Desenvolvido pela equipe do Google, Angular tem desempenhado um papel crucial na evolução do desenvolvimento front-end, oferecendo ferramentas e funcionalidades que facilitam a criação de interfaces de usuário complexas.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Importância do Angular:</strong> Angular permite a criação de aplicações escaláveis e de fácil manutenção, promovendo a reutilização de componentes e facilitando o desenvolvimento de aplicações de grande porte.
+    </li>
+    <li>
+      <strong>Quando e Por Que Surgiu:</strong> Lançado em 2016 como uma reescrita completa do AngularJS (v1.x), o Angular surgiu para abordar limitações do AngularJS, oferecendo melhor performance, arquitetura mais robusta e suporte para TypeScript.
+    </li>
+    <li>
+      <strong>Onde Geralmente Pode Ser Usado:</strong> Angular é ideal para aplicações empresariais, plataformas de e-commerce, dashboards de análise de dados e qualquer projeto que exija uma arquitetura sólida e escalável.
+    </li>
+    <li>
+      <strong>Quem Criou o Framework:</strong> O Angular foi desenvolvido pela equipe do Google, liderada por Misko Hevery, que também foi o criador do AngularJS.
+    </li>
+    <li>
+      <strong>Do Que Ele É Composto:</strong> Angular é composto por:
+      <ul>
+        <li><strong>Componentes:</strong> Blocos reutilizáveis que controlam partes específicas da interface.</li>
+        <li><strong>Templates:</strong> Utilizam uma sintaxe declarativa para renderizar a interface de usuário.</li>
+        <li><strong>Serviços:</strong> Fornecem funcionalidades compartilhadas e lógica de negócio.</li>
+        <li><strong>Diretivas:</strong> Manipulam o DOM e adicionam comportamentos aos elementos.</li>
+        <li><strong>Injeção de Dependência:</strong> Facilita a gestão de dependências entre componentes e serviços.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Exemplos de Uso:</strong>
+      <ul>
+        <li>Desenvolvimento de plataformas de gestão empresarial.</li>
+        <li>Criação de aplicações de e-commerce com funcionalidades avançadas.</li>
+        <li>Construção de dashboards interativos para análise de dados em tempo real.</li>
+        <li>Desenvolvimento de aplicativos de mídia social com interfaces dinâmicas.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    Com sua arquitetura baseada em componentes e o uso de TypeScript, Angular proporciona uma base sólida para desenvolvedores criarem aplicações robustas e de fácil manutenção. A comunidade ativa e o suporte contínuo do Google garantem que o Angular permaneça atualizado com as últimas tendências e necessidades do mercado.
+  </p>
+
+  <div class="row">
+    <p>
+      <i class="fa fa-user-circle"></i> por
+      <a href="https://www.linkedin.com/in/anaalice20" target="_blank">Ana Alice</a>
+      | <i class="fa fa-comment"></i> <a href="#">30 Comentários</a>
+      | <i class="fa fa-share"></i> <a href="#">250 Compartilhamentos</a>
+      | <i class="fa fa-tags"></i> Tags:
+      <a href="#"><span class="badge badge-info">Angular</span></a>
+      <a href="#"><span class="badge badge-info">Front-End</span></a>
+      <a href="#"><span class="badge badge-info">TypeScript</span></a>
+    </p>
+  </div>
+
+  <hr>
+</div><!-- /.blog-post -->
+
 
         <nav class="blog-pagination">
           <a class="btn btn-outline-primary" href="#">Postagens Anteriores</a>

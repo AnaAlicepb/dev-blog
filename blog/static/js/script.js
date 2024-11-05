@@ -149,3 +149,14 @@ document.addEventListener('DOMContentLoaded', function() { // Espera o carregame
     });
   }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  var carouselElement = document.getElementById('carouselExampleCaptions');
+  if (carouselElement) {
+    var carousel = new bootstrap.Carousel(carouselElement, {
+      interval: 2000, // Tempo em milissegundos entre os slides (ex.: 2000 ms = 2 segundos)
+      ride: 'carousel', // Inicia automaticamente o carrossel
+      pause: 'hover', // Pausa ao passar o mouse
+      wrap: true // Retorna ao primeiro slide após o último
+    });
+  }
+});
